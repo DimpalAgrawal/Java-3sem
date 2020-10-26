@@ -22,6 +22,10 @@ public enum Months {
     Months(int numberOfDays) {
         this.numberOfDays = numberOfDays;
     }
+
+    public int getNumberOfDays() {
+        return numberOfDays;
+    }
 }
 
 class Main {
