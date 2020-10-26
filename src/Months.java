@@ -1,4 +1,3 @@
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
@@ -33,6 +32,8 @@ class Main {
         int currentMonth = new GregorianCalendar().get(Calendar.MONTH);
         System.out.println(currentMonth);
         System.out.println(new GregorianCalendar().getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.ENGLISH));
+        int currentDate = new GregorianCalendar().get(Calendar.DATE);
+        System.out.println(currentDate);
 
     }
 }
