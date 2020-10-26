@@ -4,18 +4,24 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public enum Months {
-    JANUARY,
-    FEBRUARY,
-    MARCH,
-    APRIL,
-    MAY,
-    JUNE,
-    JULY,
-    AUGUST,
-    SEPTEMBER,
-    OCTOBER,
-    NOVEMBER,
-    DECEMBER
+    JANUARY(31),
+    FEBRUARY(29),
+    MARCH(31),
+    APRIL(30),
+    MAY(31),
+    JUNE(30),
+    JULY(31),
+    AUGUST(31),
+    SEPTEMBER(30),
+    OCTOBER(31),
+    NOVEMBER(30),
+    DECEMBER(31);
+
+    private final int numberOfDays;
+
+    Months(int numberOfDays) {
+        this.numberOfDays = numberOfDays;
+    }
 }
 
 class Main {
