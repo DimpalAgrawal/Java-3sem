@@ -1,9 +1,21 @@
-/*   Created by IntelliJ IDEA.
- *   Author: Dimpal Agrawal
- *   Date: 10/26/2020
- *   Time: 10:10 PM
- *   File: Months.java
- */
-
-public class Months {
+public enum Months {
+    JANUARY,
+    FEBRUARY,
+    MARCH,
+    APRIL,
+    MAY,
+    JUNE,
+    JULY,
+    AUGUST,
+    SEPTEMBER,
+    OCTOBER,
+    NOVEMBER,
+    DECEMBER
 }
+
+class Main {
+    public static void main(String[] args) {
+
+    }
+}
+
