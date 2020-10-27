@@ -128,7 +128,6 @@ class Main {
             default:
                 System.out.println("Have a nice day");
         }
-
     }
 }
 
