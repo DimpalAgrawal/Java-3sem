@@ -34,32 +34,32 @@ public class BSTInsertion {
             return newnode(data);
         }
         if (data < (root.data)) {
-            root.left = insert(root.left, root.data);
+            root.left = insert(root.left, data);
         } else if (data > (root.data)) {
-            root.right = insert(root.right, root.data);
+            root.right = insert(root.right, data);
 
         }
         return root;
     }
 
 
-    static void preorder(Node root) {
+    static void inorder(Node root) {
 
         if (root != null) {
+            inorder(root.left);
             System.out.println(root.data);
-            preorder(root.left);
-            preorder(root.right);
+            inorder(root.right);
         }
     }
 
 
     public static void main(String[] args) {
         Node root = null;
-        root = insert(root, 2);
-        insert(root, 5);
-        insert(root, 4);
-        insert(root, 9);
-        preorder(root);
+        root = insert(root, 3);
+        root = insert(root, 0);
+        root = insert(root, 9);
+        root = insert(root, 1);
+        inorder(root);
 
     }
 }
